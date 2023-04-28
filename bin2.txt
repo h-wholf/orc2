@@ -1,0 +1,1 @@
+{"number":{},"scheme":"mastercard","type":"debit","brand":"Prepaid Debit Gift","prepaid":true,"country":{"numeric":"840","alpha2":"US","name":"United States of America","emoji":"🇺🇸","currency":"USD","latitude":38,"longitude":-97},"bank":{"name":"FIRST PREMIER BANK","url":"www.firstpremier.com","phone":"(605) 884-2010"}}

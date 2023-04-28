@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    color: white;
+    background-image: url("1.jpg");
+}
+.titulo
+{
+
+    color: rgba(73,237,239,0.903);
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    transition: 0.5s;
+
+}
+
+
+
+
+
+.mensaje
+{
+    color: rgba(175,255,248,0.25);
+    font-size: 24px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    transition: 0.5s;
+    text-decoration: none;
+
+
+
+}
+.mensaje:hover
+{
+
+    border-left: 1px solid #01E7DC;
+    border-right: 1px solid #01E7DC;
+    padding: 12px;
+    color: #01E7DC;
+    letter-spacing: 0.2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenido
+{
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    
+    background-color: rgba(8,39,52,0.227);
+    
+}
+.contenedor2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+
+
+.inputBox
+{
+    position: relative;
+    height: auto;
+    color: #a4ff20;
+    width: 80%;
+
+    padding: 12px;
+    font-style: italic;
+    font-weight: bold;
+    width: 350px;
+    background-color: #374447;
+
+
+
+}
+.inputBox input
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgb(45,103,129);
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    font-family: 'Raleway', sans-serif;
+    
+    transition: 0.5s;
+}
+
+.inputBox span
+{
+    position: absolute;left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: capitalize;
+    transition: 0.5s;
+
+    
+}
+.inputBox input:valid ~ span, .inputBox input:focus ~ span
+{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: rgb(103,121,129);
+    letter-spacing: 0.2em;
+    border: 1px solid #00dfc4;
+
+
+}
+
+.boton
+{
+    text-decoration: none; 
+    color: #458582;
+    border: 1px solid #458582;
+    padding: 5px;
+    border-radius: 7px;
+    width: 150px;
+    transition: 0.5s;
+}
+
+.boton:hover
+{
+    color: #0DFFF4;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.boton2
+{
+    
+    font-style: italic;
+
+    font-weight: bold;
+    color: rgb(229,255,13);
+    border: 1px solid rgb(19,25,22);
+    
+    border-radius: 7px;
+    padding: 14px;
+    width: auto;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    font-family: 'Raleway', sans-serif;
+    
+background-color: rgba(5,91,93,0.632);  
+ /*backdrop-filter: blur(7px);*/
+}
+
+ .targeta{
+  padding: 3px;
+  border-radius: 7px;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+    /*min-height: 100vh;*/
+  flex-direction: column;
+    gap: 50px;
+  background-color: rgba(0,82,82,0.45);  
+
+ backdrop-filter: blur(5px);
+   
+ }
+
+
+.text
+{
+    height: auto;
+    width: 80%;
+    padding: 4px;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    
+    border-radius: 5px;
+    outline: none;
+    color: rgb(32,197,240);
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(0,0,0,0.45);
+
+ /*backdrop-filter: blur(7px);*/
+}
+table {
+   width: 100%;
+   border: 1px solid #000;
+   
+}
+td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid rgb(17,173,180);
+   background-color: rgb(23,33,45);
+   color: rgb(181,235,79);
+   
+   
+}
+.datos
+{
+  color: rgb(255,163,80);
+  background-color: rgb(23,33,45);
+  font-style: italic;
+  letter-spacing: 0.2em;
+
+}
+.iframe
+{
+  width: 100%;
+  height: 40%;
+  color: white;
+  background-color: rgba(6,84,100,0.506);  
+
+ backdrop-filter: blur(7px);
+}
+
+
+
+
