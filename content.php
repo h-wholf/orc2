@@ -1,9 +1,4 @@
 
-<script>
-//funciones de java script
-//function asig2(idHtml) {var elementoHtml = document.getElementById(idHtml);}
-
-</script>
 
 
 

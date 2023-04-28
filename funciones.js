@@ -200,6 +200,6 @@ function curl(url) {
 function  saludar() {
   var contenido = input2.value;
  // alert("hola " + input2.value);
- console.log(contenido);
+ alert("hola " + contenido + " como estas \n un gusto conocerte");
 }
 
