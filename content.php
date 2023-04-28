@@ -1,7 +1,3 @@
-
-
-
-
 <?php
 //funciones en php
 function titulo($datos) {
@@ -18,9 +14,9 @@ function boton($nombre,$funcion){
   
 }
 
-// caja de text text area nesecita un id para mostar los datos 
+// caja de textO text area nesecita un id para mostar los datos 
 function tex($p,$id){
-  echo "	<textarea class=\"text\" oninput=\"autoAjustar(this)\" placeholder=\"$p\" id=\"$id\"></textarea>";
+  echo "	<textarea class=\"text\"  placeholder=\"$p\" id=\"$id\"></textarea>";
 }
 
 
@@ -35,18 +31,21 @@ echo "<div class=\"contenido\">";
 //tarjeta 
 
 echo "<div class=\"targeta\">";
-inb("INGRESA EL BIN A GENERAR","input1");
-
-boton("GENERAR CCS","curl('https://lookup.binlist.net/')");
-tex("AQUI SE MOSTRARAN LAS CCS GENERADAS","caja1");
+inb("INGRESA BIM O TU CC A GENERAR","input1");
+echo "<a>";
+boton("BIN CHECK","curl('https://lookup.binlist.net/')");
+boton("GENERAR CCS","gen()");
+echo "</a>";
+tex("AQUI SE MOSTRARAN LA INFORMACION DEL BIN O LAS CCS GENERADAS","caja1");
 echo "</div>";
 
 
 
 echo "<div class=\"targeta\">";
 inb("INGRESA EL BIN PARA SABER SU INFORMACIÓN","input2");
-boton("INFO BIN","saludar()");
-boton("CUAL ES MI IP","ip('https://ipinfo.io/json')");
+echo "<p classs=\"bo\">";
+boton("INFO BIN","saludar()");boton("CUAL ES MI IP","ip('https://ifconfig.me/all.json')");
+echo "</p>";
 tex("AQUI SE MOSTRARA LA INFORMACIÓN DEL BIN","caja2");
 echo "</div>";
 

@@ -10,7 +10,7 @@ body
     font-family: 'Poppins', sans-serif;
     background-size: cover;
     color: white;
-    /*background-image: url("1.jpg");*/
+    background-color: rgba(27, 38, 49 );
 }
 .titulo
 {
@@ -134,12 +134,12 @@ body
 
 }
 
+
 .boton
 {
     text-decoration: none; 
     color: #458582;
     border: 1px solid #458582;
-    padding: 5px;
     border-radius: 7px;
     width: 150px;
     transition: 0.5s;
@@ -175,27 +175,20 @@ background-color: rgba(5,91,93,0.632);
 }
 
  .targeta{
-  padding: 3px;
-  border-radius: 7px;
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-    /*min-height: 100vh;*/
-  flex-direction: column;
-    gap: 50px;
-  background-color: rgba(0,82,82,0.45);  
-
- backdrop-filter: blur(5px);
-   
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   background-color: rgba(86, 101, 115);
+   padding: 5px;
+   border-radius: 12px;
+    
  }
 
 
 .text
 {
-    height: auto;
-    width: 80%;
+    height: 250px; /* largo */
+    width: 100%; /* largo */
     padding: 4px;
     font-style: italic;
     font-weight: bold;
@@ -208,9 +201,9 @@ background-color: rgba(5,91,93,0.632);
     font-size: 13px;
     letter-spacing: 0.2em;
     font-family: 'Raleway', sans-serif;
-    background-color: rgba(0,0,0,0.45);
+    background-color: rgba(39, 55, 70 ); 
 
- /*backdrop-filter: blur(7px);*/
+    backdrop-filter: blur(7px);
 }
 table {
    width: 100%;
@@ -247,4 +240,8 @@ td {
 
 
 
+.bo {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 

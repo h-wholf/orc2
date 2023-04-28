@@ -58,36 +58,24 @@ function validar2(cc) {
       
       var d = datos()
       lives.push(cc + d);
-
       return lives;
-
-      //console.log(lives)
   } else {
-      //console.log("El número de tarjeta no es válido.");
 }
 }
 
 
 // funcion para crear numeros aleatorios
 function generar() {
-  var bin = document.getElementById("bin").value;
-  
+  /*var bin = document.getElementById("bin").value;*/
+  var bin = input1.value;
+  alert(bin);
   let nu=(bin.length);
-  
   var resultado = 16 - nu;
-  
-
-
-
   for (let i = 1; i < 150; i++) {
   var ccgen = Math.floor(Math.random() * (10 ** resultado));
   var creditcard = bin+ccgen
-  
-  
-  
   validar2(creditcard)
-  
-  //document.getElementById("bin").value = y + creditcard;
+
   
 }
   
@@ -96,8 +84,8 @@ function generar() {
 }
 
 function mostrarContenido() {
-  //var array = ["manzana", "naranja", "plátano"];
-  document.getElementById("cajaDeTexto").value = lives.join("");
+
+  caja1.value = lives.join("");
 }
 
 
@@ -132,7 +120,7 @@ function datos() {
 } else {
         var data = "|"+mes+"|"+año+"|"+cvv+"\n";
         return data;
-  //console.log("|"+mes+"|"+año+"|"+cvv);
+
 }
 
 
@@ -174,7 +162,6 @@ function mostrarDatos(obj) {
     }
   }
 }
-//function asig(idHtml) {var elementoHtml = document.getElementById(idHtml);}
 
 function curl(url) { 
   var bin = input1.value;
@@ -182,10 +169,30 @@ function curl(url) {
   
   var link = url + bin; 
   fetch(link) .then((response) => response.json()) .then((data) => { 
-    //alert(JSON.stringify(data));
-    //console.log(JSON.stringify(data));
-    var obj = JSON.stringify(data);
-    alert(obj);
+    
+    esquema = (data.schema);
+    tipo = (data.type);
+    prepago = (data.prepaid);
+    pais = (data.country.name);
+    moneda = (data.country.currency);
+    banco = (data.bank.name);
+    url = (data.bank.url);
+    telefono = (data.bank.phone);
+
+
+
+
+
+    mensaje = "esquema :"+ esquema +"\n"+"tipo de targeta :"+ tipo+"\n"+ "prepago :"+ prepago+"\n"+ "pais :"+pais+"\n" + "moneda :"+ moneda+"\n"+ "banco :" + banco+"\n" + "url :"+ url+"\n"+ "telefono :"+ telefono;
+    Swal.fire(
+  mensaje,
+  'INFORMACION DEL BIN ',
+  'success'
+)
+    
+    
+
+
     }); }
   
   
@@ -193,13 +200,26 @@ function curl(url) {
   fetch(url, {headers: {'User-Agent': 'curl/8.0.1'}}) .then((response) => response.text()) .then((data) => { 
     //alert(data);
     //console.log(data);
-    alert("TU IP ES  \n" + data);
+    
+Swal.fire(
+   data,
+  'mi ip',
+  'success'
+)
+
+
+
     
     }); }
     
 function  saludar() {
-  var contenido = input2.value;
+  //var contenido = input2.value;
  // alert("hola " + input2.value);
- alert("hola " + contenido + " como estas \n un gusto conocerte");
+ //alert("hola " + contenido + " como estas \n un gusto conocerte");
+ Swal.fire(
+  'hola ' + input2.value + ' como estas \n un gusto conocerte',
+  'esta es una alerta de sweet alert',
+  'success'
+)
 }
 
